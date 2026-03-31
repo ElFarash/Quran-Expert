@@ -58,4 +58,4 @@ with gr.Blocks(title="المساعد القرآني الذكي (AI Quran Expert)
     refresh_btn.click(get_retrieved_chunks, outputs=sources_display)
 
 if __name__ == "__main__":
-    demo.launch()
+    demo.launch(share=True)
