@@ -9,8 +9,6 @@ A comprehensive AI-powered system designed to provide deep, scholarly Tafsir (in
 - **Interactive UI:** A full Gradio-based web interface (`src/app.py`).
 - **RESTful API:** A FastAPI backend (`src/quran_api.py`) for integration into external apps.
 
-## Prerequisites
-To run this project, make sure you have [Conda](https://docs.conda.io/en/latest/) installed on your primary system.
 
 ## Installation & Setup
 
