@@ -1,0 +1,16 @@
+langchain
+langchain-community
+langchain-core
+langchain-google-genai
+chromadb
+ollama
+pypdf
+pandas
+gradio
+python-dotenv
+langchain-text-splitters
+langchain-ollama
+langchain-chroma
+langchain-openai
+datasets
+tenacity

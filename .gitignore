@@ -1,0 +1,49 @@
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Python compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDEs and Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Project specific
+logs/request_log.txt
+vector_store/chromadb_quran_tafsir/
+data/tafseer_pdfs/
+data/quran.csv
+*.log
+
+# Build / Distribution
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Coverage & Testing
+.coverage
+htmlcov/
+.pytest_cache/
+
