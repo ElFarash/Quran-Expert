@@ -58,9 +58,3 @@ uvicorn quran_api:app --reload --host 0.0.0.0 --port 8000
 
 ### Missing Vector Store Fallback (Ingestion from Scratch)
 If you skip downloading the vector store from Google Drive, the first time you run the application it will dynamically authenticate with HuggingFace, download the `MohamedRashad/Quran-Tafseer` dataset, convert all verses and interpretations using OpenAI's `text-embedding-3-small` model, and build the persistent ChromaDB index locally. **This will take time and incur OpenAI API costs**. Once complete, the vector index will be saved to `./vector_store/chromadb_quran_tafsir` for instant startup on future executions.
-
-## Architecture Guidelines
-To modify the core Tafsir generation prompts, update the System Prompts contained within:
-- `agent1_system_prompt` (Ayah parsing logic)
-- `agent2_system_prompt` (Generation, restriction, hallucination-guarding logic) 
-Within both `src/quran_rag_agent.py` and `src/quran_api.py`.
